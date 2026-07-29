@@ -39,7 +39,7 @@ public class ScythePlugin extends JavaPlugin implements Listener {
                 "BB ",
                 " S ",
                 " S "
-        );
+            );
 
         recipe.setIngredient('B', Material.NETHERITE_BLOCK);
         recipe.setIngredient('S', Material.STICK);
@@ -63,7 +63,7 @@ public class ScythePlugin extends JavaPlugin implements Listener {
                 if (mainMeta.hasCustomModelData() && mainMeta.getCustomModelData() == 777 &&
                     offMeta.hasCustomModelData() && offMeta.getCustomModelData() == 777) {
                     
-                    if (mainMeta.hasDisplayName() && offMeta.hasDisplayName())  
+                    if (mainMeta.hasDisplayName() && offMeta.hasDisplayName()) {
                         String expectedKeyword = "\u041a\u043e\u0441\u0430";
                         if (mainMeta.getDisplayName().contains(expectedKeyword) && offMeta.getDisplayName().contains(expectedKeyword)) {
                             event.setDamage(event.getDamage() + 15.0);
