@@ -26,8 +26,8 @@ public class ScythePlugin extends JavaPlugin implements Listener {
         ItemStack scythe = new ItemStack(Material.NETHERITE_HOE);
         ItemMeta meta = scythe.getItemMeta();
         if (meta != null) {
-            meta.setDisplayName("§6Боевая Коса");
-            meta.setLore(Collections.singletonList("§7Урон увеличивается при парном ношении"));
+            meta.setDisplayName("\u00a76\u0411\u043e\u0435\u0432\u0430\u044f \u041a\u043e\u0441\u0430");
+            meta.setLore(Collections.singletonList("\u00a77\u0423\u0440\u043e\u043d \u0443\u0432\u0435\u043b\u0438\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043f\u0440\u0438 \u043f\u0430\u0440\u043d\u043e\u043c \u043d\u043e\u0448\u0435\u043d\u0438\u0438"));
             meta.setCustomModelData(777);
             scythe.setItemMeta(meta);
         }
@@ -63,8 +63,9 @@ public class ScythePlugin extends JavaPlugin implements Listener {
                 if (mainMeta.hasCustomModelData() && mainMeta.getCustomModelData() == 777 &&
                     offMeta.hasCustomModelData() && offMeta.getCustomModelData() == 777) {
                     
-                    if (mainMeta.hasDisplayName() && offMeta.hasDisplayName()) {
-                        if (mainMeta.getDisplayName().contains("Коса") && offMeta.getDisplayName().contains("Коса")) {
+                    if (mainMeta.hasDisplayName() && offMeta.hasDisplayName())  
+                        String expectedKeyword = "\u041a\u043e\u0441\u0430";
+                        if (mainMeta.getDisplayName().contains(expectedKeyword) && offMeta.getDisplayName().contains(expectedKeyword)) {
                             event.setDamage(event.getDamage() + 15.0);
                         }
                     }
