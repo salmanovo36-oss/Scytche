@@ -35,11 +35,7 @@ public class ScythePlugin extends JavaPlugin implements Listener {
         NamespacedKey key = new NamespacedKey(this, "custom_scythe");
         ShapedRecipe recipe = new ShapedRecipe(key, scythe);
 
-        recipe.shape(
-                "BB ",
-                " S ",
-                " S "
-            );
+        recipe.shape("BB ", " S ", " S ");
 
         recipe.setIngredient('B', Material.NETHERITE_BLOCK);
         recipe.setIngredient('S', Material.STICK);
