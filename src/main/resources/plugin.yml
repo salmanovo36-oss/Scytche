@@ -1,0 +1,6 @@
+name: CustomScythePlugin
+version: 1.0
+main: com.myplugin.scythe.ScythePlugin
+api-version: 1.16
+author: Developer
+description: Custom scythe double hand damage mechanics for 1.16.5.
