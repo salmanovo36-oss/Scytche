@@ -29,6 +29,6 @@
           <target>1.8</target>
         </configuration>
       </plugin>
-    </build>
-  </plugins>
+    </plugins>
+  </build>
 </project>
